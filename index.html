@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taverns and Tactics | D&D, Fantasy, and Content</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Fonts: Playfair Display for titles, Inter for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the custom fonts */
+        .font-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Background texture simulation */
+        body {
+            background-color: #1a1a1a;
+            background-image: radial-gradient(#303030 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+<body class="font-body antialiased min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Content Card - Designed like a well-worn leather or wood panel -->
+    <div class="w-full max-w-lg bg-gray-800 text-gray-100 p-8 sm:p-10 rounded-xl shadow-2xl border border-yellow-700/50 transform transition duration-500 hover:shadow-yellow-900/50">
+
+        <!-- Header and Branding -->
+        <header class="text-center mb-10">
+            <div class="text-5xl font-title font-extrabold text-yellow-400 mb-2 tracking-wider">
+                T&T
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-title text-yellow-300 mb-4 tracking-wider">
+                Taverns and Tactics
+            </h1>
+            <p class="text-gray-400 italic text-sm">
+                Crafting Epic Stories, One Roll at a Time.
+            </p>
+        </header>
+
+        <!-- Mission Statement -->
+        <section class="mb-10 p-6 bg-gray-700/50 rounded-lg border-l-4 border-red-700">
+            <h2 class="text-xl font-title font-semibold mb-3 text-red-400">Our Quest</h2>
+            <p class="text-gray-300 text-sm leading-relaxed">
+                We are a collective of storytellers, Dungeon Masters, and content creators dedicated to sharing our homebrew D&D campaign, "The Whispering Wilds," and the official novelization written by our DM. Follow the journey, delve into the lore, and join the party!
+            </p>
+        </section>
+
+        <!-- Social Links / Calls to Action -->
+        <div class="space-y-4">
+
+            <!-- YOUTUBE LINK: Replace 'https://youtube.com/yourchannel' with your actual YouTube URL -->
+            <a href="https://youtube.com/yourchannel" target="_blank" class="flex items-center justify-center w-full p-4 bg-red-700 hover:bg-red-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-white font-semibold uppercase tracking-wider">
+                <span class="mr-3 text-xl">▶️</span>
+                Watch Our Campaign (YouTube)
+            </a>
+
+            <!-- TIKTOK LINK: Replace 'https://tiktok.com/@youraccount' with your actual TikTok URL -->
+            <a href="https://tiktok.com/@youraccount" target="_blank" class="flex items-center justify-center w-full p-4 bg-gray-900 hover:bg-black rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-white font-semibold uppercase tracking-wider">
+                <span class="mr-3 text-xl">🎶</span>
+                Follow Our Lore (TikTok)
+            </a>
+
+            <!-- CAMPAIGN/BOOK DETAILS LINK: This now links to the section below -->
+            <a href="#book-info" class="flex items-center justify-center w-full p-4 bg-yellow-700 hover:bg-yellow-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-gray-900 font-semibold uppercase tracking-wider">
+                <span class="mr-3 text-xl">📖</span>
+                Campaign & Book Details
+            </a>
+
+            <!-- DISCORD/COMMUNITY LINK: Replace '#community' with your actual Discord Invite Link -->
+            <a href="#community" class="block text-center pt-2 text-sm text-gray-500 hover:text-gray-400 transition duration-300">
+                Join Our Discord Server
+            </a>
+        </div>
+
+        <!-- NEW SECTION: Book/Campaign Information -->
+        <section id="book-info" class="mt-12 p-6 bg-gray-900 rounded-lg shadow-inner border border-yellow-800">
+            <h2 class="text-xl font-title font-semibold mb-4 text-yellow-300 border-b border-yellow-800 pb-2">
+                The Whispering Wilds (Novelization)
+            </h2>
+            <div class="text-sm text-gray-300 space-y-3">
+                <p>
+                    This is the perfect place to put a compelling, prolific description of your book! Focus on the main characters, the central conflict, and why a reader should jump into your fantasy world.
+                </p>
+                <p>
+                    For instance: "When the ancient Runestone of Eldoria shatters, five unlikely heroes—a disgraced knight, a cynical rogue, a cheerful cleric, a brooding warlock, and an idealistic wizard—must venture into the forgotten Whispering Wilds. They chase a cult determined to unleash the Shadow Blight, a darkness that threatens to consume the known realms of Aerthos."
+                </p>
+            </div>
+            <!-- BOOK SALES LINK: Replace '#buy-link' with your Amazon, Patreon, or personal store link -->
+            <a href="#buy-link" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-lg hover:bg-green-500 transition duration-300">
+                Buy the Book Here!
+            </a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="absolute bottom-4 text-center text-xs text-gray-600 w-full">
+        &copy; 2024 Taverns and Tactics Collective. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
