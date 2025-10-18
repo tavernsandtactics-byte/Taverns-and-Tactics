@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taverns and Tactics | Dark Fantasy</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Fonts: Playfair Display for titles, Inter for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the custom fonts */
+        .font-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Dark Fantasy Background and Overlays */
+        body {
+            /* Using a dark texture placeholder and heavy color overlay */
+            background-color: #0d0d0d;
+            background-image: url('https://placehold.co/1920x1080/1a1a1a/2d2d2d?text=Dark+Stone+Texture');
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+        /* Add a subtle dark overlay for better text readability */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: -1;
+        }
+        /* Style the main card to look like an engraved stone or metal */
+        .gothic-card {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 60, 60, 0.2);
+        }
+    </style>
+</head>
+<body class="font-body antialiased min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Content Card - Dark and imposing -->
+    <div class="w-full max-w-lg bg-gray-900 text-gray-100 p-8 sm:p-10 rounded-lg gothic-card border border-red-900/50 transform transition duration-500 hover:shadow-red-900/70">
+
+        <!-- Header and Branding -->
+        <header class="text-center mb-10">
+            <!-- Title style remains strong -->
+            <div class="text-5xl font-title font-extrabold text-red-700 mb-2 tracking-wider drop-shadow-lg">
+                T&T
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-title text-red-500 mb-4 tracking-wider">
+                Taverns and Tactics
+            </h1>
+            <p class="text-gray-400 italic text-sm">
+                Where Dice Rolls Decide Fate.
+            </p>
+        </header>
+
+        <!-- Mission Statement (Updated Text) -->
+        <section class="mb-10 p-6 bg-gray-800/70 rounded-lg border-l-4 border-red-700/80">
+            <h2 class="text-xl font-title font-semibold mb-3 text-red-400">Our Quest</h2>
+            <p class="text-gray-300 text-sm leading-relaxed">
+                We are a collective of storytellers, Dungeon Masters, and content creators dedicated to sharing our homebrew D&D campaigns, starting with "Surviving H.L.L.", along with the official novelization written by one of our very own DMs. Follow the journey, delve into the lore, and join the party!
+            </p>
+        </section>
+
+        <!-- Social Links / Calls to Action -->
+        <div class="space-y-4">
+
+            <!-- YOUTUBE LINK: Replace 'https://youtube.com/yourchannel' with your actual YouTube URL -->
+            <a href="https://youtube.com/yourchannel" target="_blank" class="flex items-center justify-center w-full p-4 bg-red-700 hover:bg-red-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-white font-semibold uppercase tracking-wider border-b-2 border-red-900">
+                <span class="mr-3 text-xl">▶️</span>
+                Watch Our Campaign (YouTube)
+            </a>
+
+            <!-- TIKTOK LINK: Replace 'https://tiktok.com/@youraccount' with your actual TikTok URL -->
+            <a href="https://tiktok.com/@youraccount" target="_blank" class="flex items-center justify-center w-full p-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-white font-semibold uppercase tracking-wider border-b-2 border-gray-900">
+                <span class="mr-3 text-xl">🎶</span>
+                Follow Our Lore (TikTok)
+            </a>
+
+            <!-- CAMPAIGN/BOOK DETAILS LINK: Links to the section below -->
+            <a href="#book-info" class="flex items-center justify-center w-full p-4 bg-yellow-700 hover:bg-yellow-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-gray-900 font-semibold uppercase tracking-wider border-b-2 border-yellow-900">
+                <span class="mr-3 text-xl">📖</span>
+                "Surviving H.L.L." Details
+            </a>
+
+            <!-- DISCORD/COMMUNITY LINK: Replace '#community' with your actual Discord Invite Link -->
+            <a href="#community" class="block text-center pt-2 text-sm text-red-900 hover:text-red-700 transition duration-300 font-semibold uppercase">
+                Join Our Crypt (Discord Server)
+            </a>
+        </div>
+
+        <!-- NEW SECTION: Book/Campaign Information (Surviving H.L.L.) -->
+        <section id="book-info" class="mt-12 p-6 bg-gray-950 rounded-lg shadow-inner border-t-4 border-red-900">
+            <h2 class="text-xl font-title font-semibold mb-4 text-red-400 border-b border-red-900 pb-2">
+                Surviving H.L.L. (Novelization)
+            </h2>
+            <div class="text-sm text-gray-300 space-y-3">
+                <p>
+                    In the dying lands of Verenthia, the link with the Gods has dissolved, giving way to the perpetual gloom caused by the Great Storm. This is not a story of heroes, but of survivors: a broken tradesman haunted by his past, a scholar searching for a forbidden cure, and a cult seeking the unknown.
+                </p>
+                <p>
+                    As they traverse a landscape twisted by cosmic horrors and relentless psychological trauma, they must confront the terrifying truth: the only way to escape is to surrender everything that makes them human. Madness is a currency, and salvation is a myth.
+                </p>
+            </div>
+            <!-- BOOK SALES LINK: Replace '#buy-link' with your Amazon, Patreon, or personal store link -->
+            <a href="#buy-link" target="_blank" class="mt-4 inline-block px-4 py-2 bg-red-800 text-white text-sm font-semibold rounded-lg hover:bg-red-700 transition duration-300 border border-red-500 shadow-lg">
+                Acquire the Text (Buy Here)
+            </a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="absolute bottom-4 text-center text-xs text-red-900 w-full">
+        &copy; 2024 Taverns and Tactics Collective. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
