@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taverns and Tactics | D&D, Fantasy, and Content</title>
+    <title>Taverns and Tactics | Dark Fantasy</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Load Google Fonts: Playfair Display for titles, Inter for body -->
@@ -16,37 +16,57 @@
         .font-body {
             font-family: 'Inter', sans-serif;
         }
-        /* Background texture simulation */
+        
+        /* Dark Fantasy Background and Overlays */
         body {
-            background-color: #1a1a1a;
-            background-image: radial-gradient(#303030 1px, transparent 0);
-            background-size: 40px 40px;
+            /* Using a dark texture placeholder and heavy color overlay */
+            background-color: #0d0d0d;
+            background-image: url('https://placehold.co/1920x1080/1a1a1a/2d2d2d?text=Dark+Stone+Texture');
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+        /* Add a subtle dark overlay for better text readability */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: -1;
+        }
+        /* Style the main card to look like an engraved stone or metal */
+        .gothic-card {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 60, 60, 0.2);
         }
     </style>
 </head>
 <body class="font-body antialiased min-h-screen flex items-center justify-center p-4">
 
-    <!-- Main Content Card - Designed like a well-worn leather or wood panel -->
-    <div class="w-full max-w-lg bg-gray-800 text-gray-100 p-8 sm:p-10 rounded-xl shadow-2xl border border-yellow-700/50 transform transition duration-500 hover:shadow-yellow-900/50">
+    <!-- Main Content Card - Dark and imposing -->
+    <div class="w-full max-w-lg bg-gray-900 text-gray-100 p-8 sm:p-10 rounded-lg gothic-card border border-red-900/50 transform transition duration-500 hover:shadow-red-900/70">
 
         <!-- Header and Branding -->
         <header class="text-center mb-10">
-            <div class="text-5xl font-title font-extrabold text-yellow-400 mb-2 tracking-wider">
+            <!-- Title style remains strong -->
+            <div class="text-5xl font-title font-extrabold text-red-700 mb-2 tracking-wider drop-shadow-lg">
                 T&T
             </div>
-            <h1 class="text-2xl sm:text-3xl font-title text-yellow-300 mb-4 tracking-wider">
+            <h1 class="text-2xl sm:text-3xl font-title text-red-500 mb-4 tracking-wider">
                 Taverns and Tactics
             </h1>
             <p class="text-gray-400 italic text-sm">
-                Crafting Epic Stories, One Roll at a Time.
+                Where Dice Rolls Decide Fate.
             </p>
         </header>
 
-        <!-- Mission Statement -->
-        <section class="mb-10 p-6 bg-gray-700/50 rounded-lg border-l-4 border-red-700">
+        <!-- Mission Statement (Updated Text) -->
+        <section class="mb-10 p-6 bg-gray-800/70 rounded-lg border-l-4 border-red-700/80">
             <h2 class="text-xl font-title font-semibold mb-3 text-red-400">Our Quest</h2>
             <p class="text-gray-300 text-sm leading-relaxed">
-                We are a collective of storytellers, Dungeon Masters, and content creators dedicated to sharing our homebrew D&D campaign, "The Whispering Wilds," and the official novelization written by our DM. Follow the journey, delve into the lore, and join the party!
+                We are a collective of storytellers, Dungeon Masters, and content creators dedicated to sharing our homebrew D&D campaigns, starting with "Surviving H.L.L.", along with the official novelization written by one of our very own DMs. Follow the journey, delve into the lore, and join the party!
             </p>
         </section>
 
@@ -54,54 +74,55 @@
         <div class="space-y-4">
 
             <!-- YOUTUBE LINK: Replace 'https://youtube.com/yourchannel' with your actual YouTube URL -->
-            <a href="https://youtube.com/yourchannel" target="_blank" class="flex items-center justify-center w-full p-4 bg-red-700 hover:bg-red-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-white font-semibold uppercase tracking-wider">
+            <a href="https://youtube.com/yourchannel" target="_blank" class="flex items-center justify-center w-full p-4 bg-red-700 hover:bg-red-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-white font-semibold uppercase tracking-wider border-b-2 border-red-900">
                 <span class="mr-3 text-xl">▶️</span>
                 Watch Our Campaign (YouTube)
             </a>
 
             <!-- TIKTOK LINK: Replace 'https://tiktok.com/@youraccount' with your actual TikTok URL -->
-            <a href="https://tiktok.com/@youraccount" target="_blank" class="flex items-center justify-center w-full p-4 bg-gray-900 hover:bg-black rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-white font-semibold uppercase tracking-wider">
+            <a href="https://tiktok.com/@youraccount" target="_blank" class="flex items-center justify-center w-full p-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-white font-semibold uppercase tracking-wider border-b-2 border-gray-900">
                 <span class="mr-3 text-xl">🎶</span>
                 Follow Our Lore (TikTok)
             </a>
 
-            <!-- CAMPAIGN/BOOK DETAILS LINK: This now links to the section below -->
-            <a href="#book-info" class="flex items-center justify-center w-full p-4 bg-yellow-700 hover:bg-yellow-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-gray-900 font-semibold uppercase tracking-wider">
+            <!-- CAMPAIGN/BOOK DETAILS LINK: Links to the section below -->
+            <a href="#book-info" class="flex items-center justify-center w-full p-4 bg-yellow-700 hover:bg-yellow-600 rounded-lg transition duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] text-gray-900 font-semibold uppercase tracking-wider border-b-2 border-yellow-900">
                 <span class="mr-3 text-xl">📖</span>
-                Campaign & Book Details
+                "Surviving H.L.L." Details
             </a>
 
             <!-- DISCORD/COMMUNITY LINK: Replace '#community' with your actual Discord Invite Link -->
-            <a href="#community" class="block text-center pt-2 text-sm text-gray-500 hover:text-gray-400 transition duration-300">
-                Join Our Discord Server
+            <a href="#community" class="block text-center pt-2 text-sm text-red-900 hover:text-red-700 transition duration-300 font-semibold uppercase">
+                Join Our Crypt (Discord Server)
             </a>
         </div>
 
-        <!-- NEW SECTION: Book/Campaign Information -->
-        <section id="book-info" class="mt-12 p-6 bg-gray-900 rounded-lg shadow-inner border border-yellow-800">
-            <h2 class="text-xl font-title font-semibold mb-4 text-yellow-300 border-b border-yellow-800 pb-2">
-                The Whispering Wilds (Novelization)
+        <!-- NEW SECTION: Book/Campaign Information (Surviving H.L.L.) -->
+        <section id="book-info" class="mt-12 p-6 bg-gray-950 rounded-lg shadow-inner border-t-4 border-red-900">
+            <h2 class="text-xl font-title font-semibold mb-4 text-red-400 border-b border-red-900 pb-2">
+                Surviving H.L.L. (Novelization)
             </h2>
             <div class="text-sm text-gray-300 space-y-3">
                 <p>
-                    This is the perfect place to put a compelling, prolific description of your book! Focus on the main characters, the central conflict, and why a reader should jump into your fantasy world.
+                    In the dying lands of Verenthia, the link with the Gods has dissolved, giving way to the perpetual gloom caused by the Great Storm. This is not a story of heroes, but of survivors: a broken tradesman haunted by his past, a scholar searching for a forbidden cure, and a cult seeking the unknown.
                 </p>
                 <p>
-                    For instance: "When the ancient Runestone of Eldoria shatters, five unlikely heroes—a disgraced knight, a cynical rogue, a cheerful cleric, a brooding warlock, and an idealistic wizard—must venture into the forgotten Whispering Wilds. They chase a cult determined to unleash the Shadow Blight, a darkness that threatens to consume the known realms of Aerthos."
+                    As they traverse a landscape twisted by cosmic horrors and relentless psychological trauma, they must confront the terrifying truth: the only way to escape is to surrender everything that makes them human. Madness is a currency, and salvation is a myth.
                 </p>
             </div>
             <!-- BOOK SALES LINK: Replace '#buy-link' with your Amazon, Patreon, or personal store link -->
-            <a href="#buy-link" target="_blank" class="mt-4 inline-block px-4 py-2 bg-green-600 text-white text-sm font-semibold rounded-lg hover:bg-green-500 transition duration-300">
-                Buy the Book Here!
+            <a href="#buy-link" target="_blank" class="mt-4 inline-block px-4 py-2 bg-red-800 text-white text-sm font-semibold rounded-lg hover:bg-red-700 transition duration-300 border border-red-500 shadow-lg">
+                Acquire the Text (Buy Here)
             </a>
         </section>
 
     </div>
 
     <!-- Footer -->
-    <footer class="absolute bottom-4 text-center text-xs text-gray-600 w-full">
+    <footer class="absolute bottom-4 text-center text-xs text-red-900 w-full">
         &copy; 2024 Taverns and Tactics Collective. All Rights Reserved.
     </footer>
 
 </body>
 </html>
+
